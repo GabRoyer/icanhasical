@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eef69a58-b5d7-480a-8d3d-f64f6934b000}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Program.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <AssemblyName>icanhasical</AssemblyName>
+    <Name>icanhasical</Name>
+    <RootNamespace>icanhasical</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>3.2</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="model\course.py" />
+    <Compile Include="model\schedule.py" />
+    <Compile Include="model\__init__.py" />
+    <Compile Include="Program.py" />
+    <Compile Include="tests\course_test.py" />
+    <Compile Include="tests\schedule_test.py" />
+    <Compile Include="util\coursestring.py" />
+    <Compile Include="util\__init__.py" />
+    <Compile Include="views.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\css" />
+    <Folder Include="assets\html" />
+    <Folder Include="assets\images" />
+    <Folder Include="model" />
+    <Folder Include="assets" />
+    <Folder Include="util" />
+    <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\ichi.css" />
+    <Content Include="assets\html\index.html" />
+    <Content Include="assets\images\bg.png" />
+    <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\i-can-has-iCal.png" />
+  </ItemGroup>
+</Project>

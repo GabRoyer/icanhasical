@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Can Has iCal?</title>
+    <link href="../css/ichi.css" rel=Stylesheet />
+</head>
+<body>
+    <div id="container">
+        <img src="../images/i-can-has-iCal.png" alt="I can has iCal?" />
+        <div id="description">
+        <form method="post" action="/ajax" class="boxed">
+            <h1>Entrez la liste de vos cours</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Cours (Sigle)</th>
+                        <th colspan="2">Section</th>
+                    </tr>
+                    <tr>
+                        <th>Théorie</th>
+                        <th>Labo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sigil"><input type="text" name="sigil" /></td>
+                        <td class="group_theory"><input type="text" name="groupeTheorique" /></td>
+                        <td class="group_lab"><input type="text" name="group_lab" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sigil"><input type="text" name="sigil" /></td>
+                        <td class="group_theory"><input type="text" name="groupeTheorique" /></td>
+                        <td class="group_lab"><input type="text" name="group_lab" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sigil"><input type="text" name="sigil" /></td>
+                        <td class="group_theory"><input type="text" name="groupeTheorique" /></td>
+                        <td class="group_lab"><input type="text" name="group_lab" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sigil"><input type="text" name="sigil" /></td>
+                        <td class="group_theory"><input type="text" name="groupeTheorique" /></td>
+                        <td class="group_lab"><input type="text" name="group_lab" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sigil"><input type="text" name="sigil" /></td>
+                        <td class="group_theory"><input type="text" name="groupeTheorique" /></td>
+                        <td class="group_lab"><input type="text" name="group_lab" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <span id="submit" onclick="sendRequest()">Envoyer</span>
+            <span id="addRow" onclick="addRow()">Ajouter une nouvelle ligne</span>
+        </form>
+        
+        <p>I can has iCal est une application web qui permet aux étudiants de l'École Polytechnique
+            de Montréal d'avoir accès à une copie de leur horaire sous le format iCalendar.</p>
+        <p>Le format iCalendar est un format standard d'agenda vastement supporté. Plusieurs
+            applications très connues telles Outlook et Google Calendar permettent d'importer
+            des calendriers enregistrés sous ce format.</p>
+        <p> Il est également possible d'importer un fichier iCal à l'aide d'un iPod
+            touch / iPhone permettant ainsi d'avoir une copie de son horaire dans sa poche
+            en tout temps!</p>
+        </div>
+    </div>
+</body>
+</html>

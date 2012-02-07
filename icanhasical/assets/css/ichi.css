@@ -1,0 +1,58 @@
+html 
+{
+    background-image:url(../images/bg.png);
+    background-repeat:repeat;
+}
+
+body
+{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    color:#EEE;
+}
+
+#container
+{
+    width: 904px;
+    margin: 80px auto;
+    background: #666;
+    border-radius: 30px;
+    box-shadow: 0 4px 24px 1px #161616;
+    padding: 24px;
+}
+
+form
+{
+    width:464px;
+    float:right;
+}
+
+.boxed
+{
+    background: #999;
+    border-radius: 30px;
+    box-shadow: 0 4px 24px 1px #444;
+    padding:12px 16px;
+}
+
+.boxed > *
+{
+    margin: 0 auto;
+}
+
+form h1
+{
+    font-size: 32px;
+    text-align:center;
+}
+
+.group_lab input, .group_theory input
+{
+    width:96px;
+}
+
+p
+{
+    text-align:center;   
+}
